@@ -1,15 +1,15 @@
 package edu.cmu.cs.cs214.lab02.shapes;
 
 public class Rectangle implements Shape {
-    public double height;
-    public double width;
+    private double _height;
+    private double _width;
     
     public Rectangle(double height, double width){
-        this.height = height;
-        this.width = width;
+        this._height = height;
+        this._width = width;
     }
 
     public double getArea() {
-        return height * width;
+        return _height * _width;
     }
 }

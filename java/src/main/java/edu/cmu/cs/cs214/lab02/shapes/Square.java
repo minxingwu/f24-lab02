@@ -1,13 +1,13 @@
 package edu.cmu.cs.cs214.lab02.shapes;
 
 public class Square implements Shape {
-    public double sideLen;
+    private double _sideLen;
 
     public Square(double sideLen) {
-        this.sideLen = sideLen;
+        this._sideLen = sideLen;
     }
     
     public double getArea() {
-        return sideLen * sideLen;
+        return _sideLen * _sideLen;
     }
 }
