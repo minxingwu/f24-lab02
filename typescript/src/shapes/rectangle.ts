@@ -1,10 +1,16 @@
 import {Shape} from "./shape.js";
 
-function newRectangle(width: number, height: number): Shape {
+
+interface Rectangle extends Shape{
+
+    width: number;
+    height: number;
+}
+
+function newRectangle(width: number, height: number): Rectangle {
     return {
         width,
         height,
-
         computeArea: function (): number {
             return width * height
         }
